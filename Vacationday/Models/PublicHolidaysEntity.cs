@@ -1,11 +1,11 @@
 ﻿namespace Interview.Models
 {
-    public record PublicHolidaysEntity
+    public class PublicHolidaysEntity
     {
-        public DateOnly Date { get; init; }
+        public DateOnly Date { get; set; }
 
-        public string Name { get; init; }
+        public string Name { get; set; } = "";
 
-        public bool PaidDayOff { get; init; }
+        public bool PaidDayOff { get; set; } = true;
     }
 }
