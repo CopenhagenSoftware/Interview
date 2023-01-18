@@ -9,6 +9,6 @@ namespace Interview.Services
         /// </summary>
         /// <param name="employeeId">Employee id</param>
         /// <returns>A list of registrations</returns>
-        Task<IEnumerable<HolidayRegistrationEntity>> GetHolidayRegistartionsAsync(string employeeId);
+        Task<IReadOnlyList<HolidayRegistrationEntity>> GetHolidayRegistartionsAsync(string employeeId);
     }
 }
