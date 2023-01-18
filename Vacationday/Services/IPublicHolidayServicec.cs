@@ -2,12 +2,12 @@
 
 namespace Interview.Services
 {
-    public interface IPublicHolidayServicec
+    public interface IPublicHolidayService
     {
         /// <summary>
         /// Get all public holidays
         /// </summary>
         /// <returns>A list of holidays</returns>
-        Task<IEnumerable<PublicHolidaysEntity>> GetPublicHolidaysAsync();
+        Task<IReadOnlyList<PublicHolidaysEntity>> GetPublicHolidaysAsync();
     }
 }
