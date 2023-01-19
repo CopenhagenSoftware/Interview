@@ -5,12 +5,16 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vacationday", "Vacationday\Vacationday.csproj", "{93259D7E-1874-4151-AE05-21DC37041EEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Other", "Other\Other.csproj", "{8E30CD8F-D32C-4B73-ABB5-73D3EC6DC5B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Other", "Other\Other.csproj", "{8E30CD8F-D32C-4B73-ABB5-73D3EC6DC5B4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6B5A8B64-07C1-43A5-AA02-CBCD86F58CDF}"
 	ProjectSection(SolutionItems) = preProject
 		Docs\Interview.pptx = Docs\Interview.pptx
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Part 1", "Part 1", "{E02E5C7F-DB3E-4020-9F7C-B28B833B49E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Part 2", "Part 2", "{3CB56D94-E1FB-439E-97BD-D5D9C456A1F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +33,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{93259D7E-1874-4151-AE05-21DC37041EEA} = {3CB56D94-E1FB-439E-97BD-D5D9C456A1F9}
+		{8E30CD8F-D32C-4B73-ABB5-73D3EC6DC5B4} = {E02E5C7F-DB3E-4020-9F7C-B28B833B49E7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AD40D62E-DD37-4F3A-86D9-E357202F4224}
