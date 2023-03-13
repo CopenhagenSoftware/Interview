@@ -2,8 +2,8 @@
 {
     public record HolidayRegistrationEntity
     {
-        public DateOnly FirstDay { get; init; }
+        public required DateOnly FirstDay { get; init; }
 
-        public DateOnly LastDay { get; init; }
+        public required DateOnly LastDay { get; init; }
     }
 }

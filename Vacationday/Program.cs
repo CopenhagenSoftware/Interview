@@ -22,13 +22,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.MapGet("/vacationdaysused", async (IPublicHolidayService publicHolidayService, IHolidayRegistrationService holidayRegistrationService) =>
-{
-    // Add awesome code here! 
+app.MapGet(
+    "/vacationdaysused",
+    async (IPublicHolidayService publicHolidayService, IHolidayRegistrationService holidayRegistrationService) =>
+    {
+        // Add awesome code here! 
 
-    return 1;
-})
-.WithName("GetVacationDaysUsed");
+        return 1;
+    })
+    .WithName("GetVacationDaysUsed");
 
 app.Run();
 

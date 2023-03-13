@@ -2,10 +2,10 @@
 {
     public record PublicHolidaysEntity
     {
-        public DateOnly Date { get; init; }
+        public required DateOnly Date { get; init; }
 
-        public string Name { get; init; }
+        public required string Name { get; init; }
 
-        public bool PaidDayOff { get; init; }
+        public required bool PaidDayOff { get; init; }
     }
 }
