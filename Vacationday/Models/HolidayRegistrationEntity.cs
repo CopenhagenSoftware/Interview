@@ -1,9 +1,9 @@
 ﻿namespace Interview.Models
 {
-    public class HolidayRegistrationEntity
+    public record HolidayRegistrationEntity
     {
-        public DateOnly FirstDay { get; set; }
+        public required DateOnly FirstDay { get; init; }
 
-        public DateOnly LastDay { get; set; }
+        public required DateOnly LastDay { get; init; }
     }
 }
