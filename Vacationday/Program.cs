@@ -28,7 +28,7 @@ app.MapGet(
     {
         // Add awesome code here! 
 
-        return 1;
+        return 1; // return the number of days used
     })
     .WithName("GetVacationDaysUsed");
 
