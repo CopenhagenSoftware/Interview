@@ -1,6 +1,8 @@
+using Interview;
 using Interview.Services;
 using Interview.Utils;
-using Microsoft.AspNetCore.Http.Json;
+using Microsoft.AspNetCore.Mvc;
+using JsonOptions = Microsoft.AspNetCore.Http.Json.JsonOptions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +23,18 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.MapPost(
+    "/vacationdays",
+    async (IHolidayRegistrationService holidayRegistrationService,
+           [FromBody] HolidayRegistrationDto request) =>
+    {
+        await holidayRegistrationService.AddHolidayRegistration(request.StartDate, request.NumberOfDays);
+
+        return Results.Created();
+
+    })
+    .WithName("PostNewHolidayRegistration");
 
 app.MapGet(
     "/vacationdaysused",
