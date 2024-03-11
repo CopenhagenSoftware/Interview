@@ -9,5 +9,10 @@ namespace Interview.Services
         /// </summary>
         /// <returns>A list of registrations</returns>
         Task<IReadOnlyList<HolidayRegistrationEntity>> GetHolidayRegistartionsAsync();
+
+        ///<summary>
+        ///Add another holiday registration - a holiday registration can only be between 1 and 25 days long (inclusive)
+        ///</summary>
+        Task AddHolidayRegistration(DateOnly startDate, int days);
     }
 }
