@@ -14,6 +14,11 @@ builder.Services.Configure<JsonOptions>(options =>
     options.SerializerOptions.Converters.Add(new DateOnlyConverter());
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("allowAll", policy => policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+});
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -21,6 +26,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("allowAll");
 
 app.MapGet(
     "/vacationdaysused",
