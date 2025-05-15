@@ -4,7 +4,7 @@ namespace Interview.Services
 {
     public class HolidayRegistrationService : IHolidayRegistrationService
     {
-        public Task<IReadOnlyList<HolidayRegistrationEntity>> GetHolidayRegistartionsAsync()
+        public Task<IReadOnlyList<HolidayRegistrationEntity>> GetHolidayRegistrationsAsync()
         {
             var registrations = new List<HolidayRegistrationEntity> 
             {
