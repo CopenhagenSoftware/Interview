@@ -8,6 +8,6 @@ namespace Interview.Services
         /// Return holiday registartions for a given employee
         /// </summary>
         /// <returns>A list of registrations</returns>
-        Task<IReadOnlyList<HolidayRegistrationEntity>> GetHolidayRegistartionsAsync();
+        Task<IReadOnlyList<HolidayRegistrationEntity>> GetHolidayRegistrationsAsync();
     }
 }
