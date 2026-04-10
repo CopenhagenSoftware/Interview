@@ -5,9 +5,9 @@ namespace Interview.Services
     public interface IHolidayRegistrationService
     {
         /// <summary>
-        /// Return holiday registartions for a given employee
+        /// Return holiday registrations for a given employee
         /// </summary>
         /// <returns>A list of registrations</returns>
-        Task<IReadOnlyList<HolidayRegistrationEntity>> GetHolidayRegistartionsAsync();
+        Task<IReadOnlyList<HolidayRegistrationEntity>> GetHolidayRegistrationsAsync();
     }
 }
